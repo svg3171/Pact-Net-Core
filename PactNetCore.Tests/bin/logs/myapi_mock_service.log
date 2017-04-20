@@ -1,0 +1,149 @@
+﻿2017-04-20 13:56:26.527 -04:00 [Info] Started http://localhost:4321
+2017-04-20 13:56:26.906 -04:00 [Info] Cleared interactions
+2017-04-20 13:56:27.106 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 13:56:27.136 -04:00 [Info] Registered expected interaction POST /things
+2017-04-20 13:56:27.138 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-20 13:56:27.197 -04:00 [Info] Cleared interactions
+2017-04-20 13:56:27.245 -04:00 [Info] Stopped http://localhost:4321
+2017-04-20 13:56:52.293 -04:00 [Info] Started http://localhost:4321
+2017-04-20 13:56:52.690 -04:00 [Info] Cleared interactions
+2017-04-20 13:56:52.909 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 13:56:52.937 -04:00 [Info] Registered expected interaction POST /things
+2017-04-20 13:56:52.940 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-20 13:56:52.960 -04:00 [Info] Cleared interactions
+2017-04-20 13:56:52.962 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 13:56:52.964 -04:00 [Info] Registered expected interaction GET /things
+2017-04-20 13:56:52.964 -04:00 [Debug] {
+  "description": "A GET request to retrieve things by type",
+  "request": {
+    "method": "get",
+    "path": "/things",
+    "query": "type=awesome",
+    "headers": {
+      "Accept": "application/json; charset=utf-8"
+    }
+  },
+  "response": {
+    "status": 200
+  }
+}
+2017-04-20 13:56:53.001 -04:00 [Info] Received request GET /things
+2017-04-20 13:56:53.001 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things",
+  "query": "type=awesome",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-20 13:56:53.029 -04:00 [Error] No matching interaction found for GET /things
+2017-04-20 13:56:53.041 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-20 13:56:53.042 -04:00 [Error] Missing requests: GET /things
+2017-04-20 13:56:53.043 -04:00 [Error] Unexpected requests: GET /things
+2017-04-20 13:56:53.045 -04:00 [Info] Cleared interactions
+2017-04-20 13:56:53.047 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 13:56:53.047 -04:00 [Info] Registered expected interaction GET /things/1234
+2017-04-20 13:56:53.047 -04:00 [Debug] {
+  "description": "A GET request to retrieve a thing",
+  "request": {
+    "method": "get",
+    "path": "/things/1234"
+  },
+  "response": {
+    "status": 200
+  }
+}
+2017-04-20 13:56:53.052 -04:00 [Info] Received request GET /things/1234
+2017-04-20 13:56:53.052 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things/1234",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-20 13:56:53.052 -04:00 [Info] Found matching response for GET /things/1234
+2017-04-20 13:56:53.052 -04:00 [Debug] {
+  "status": 200
+}
+2017-04-20 13:56:53.061 -04:00 [Info] Received request GET /things/1234
+2017-04-20 13:56:53.061 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things/1234",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-20 13:56:53.061 -04:00 [Info] Found matching response for GET /things/1234
+2017-04-20 13:56:53.061 -04:00 [Debug] {
+  "status": 200
+}
+2017-04-20 13:56:53.063 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-20 13:56:53.063 -04:00 [Error] The interaction with description 'A GET request to retrieve a thing' and provider state '', was used 2 time/s by the test.
+2017-04-20 13:56:53.064 -04:00 [Info] Cleared interactions
+2017-04-20 13:56:53.067 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 13:56:53.068 -04:00 [Info] Registered expected interaction POST /things
+2017-04-20 13:56:53.068 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-20 13:56:53.070 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-20 13:56:53.070 -04:00 [Error] Missing requests: POST /things
+2017-04-20 13:56:53.097 -04:00 [Info] Cleared interactions
+2017-04-20 13:56:53.155 -04:00 [Info] Stopped http://localhost:4321
+2017-04-20 13:57:44.272 -04:00 [Info] Started http://localhost:4321
+2017-04-20 13:57:44.652 -04:00 [Info] Cleared interactions
+2017-04-20 13:57:44.780 -04:00 [Info] Verifying - interactions matched
+2017-04-20 13:57:44.858 -04:00 [Info] Cleared interactions
+2017-04-20 13:57:44.910 -04:00 [Info] Stopped http://localhost:4321
+2017-04-20 15:13:33.154 -04:00 [Info] Started http://localhost:4321

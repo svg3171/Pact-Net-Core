@@ -1,0 +1,63 @@
+﻿2017-04-20 15:13:33.178 -04:00 [Error] System.IO.IOException: Failed to bind to address http://localhost:4321 on the IPv4 loopback interface: port already in use. ---> System.AggregateException: One or more errors occurred. (Error -4091 EADDRINUSE address already in use) ---> Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.Libuv.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.Libuv.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.TcpListenerPrimary.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Listener.<StartAsync>b__8_0(Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.ListenerPrimary.<StartAsync>d__12.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.KestrelEngine.CreateServer(ServerAddress address)
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelServer.Start[TContext](IHttpApplication`1 application)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelServer.Start[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Start()
+   at PactNet.Mocks.MockHttpService.Nancy.NancyHttpHost.Start() in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\NancyHttpHost.cs:line 69
+2017-04-20 15:13:33.179 -04:00 [Info] Started http://localhost:4321
+2017-04-20 15:13:33.438 -04:00 [Info] Cleared interactions
+2017-04-20 15:13:33.438 -04:00 [Info] Cleared interactions
+2017-04-20 15:13:33.539 -04:00 [Info] Verifying - interactions matched
+2017-04-20 15:13:33.558 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 15:13:33.558 -04:00 [Info] Registered expected interaction POST /things
+2017-04-20 15:13:33.558 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-20 15:13:33.562 -04:00 [Info] Cleared interactions
+2017-04-20 15:13:33.562 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 15:13:33.563 -04:00 [Info] Registered expected interaction POST /things
+2017-04-20 15:13:33.563 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-20 15:13:33.568 -04:00 [Info] Stopped http://localhost:4321

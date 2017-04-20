@@ -1,9 +1,9 @@
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\bin\Debug\netcoreapp1.1\Provider.Api.Web.deps.json
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\bin\Debug\netcoreapp1.1\Provider.Api.Web.runtimeconfig.json
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\bin\Debug\netcoreapp1.1\Provider.Api.Web.runtimeconfig.dev.json
-C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\obj\Debug\netcoreapp1.1\Provider.Api.Web.csprojResolveAssemblyReference.cache
-C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\obj\Debug\netcoreapp1.1\Provider.Api.Web.AssemblyInfo.cs
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\bin\Debug\netcoreapp1.1\Provider.Api.Web.dll
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\bin\Debug\netcoreapp1.1\Provider.Api.Web.pdb
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\obj\Debug\netcoreapp1.1\Provider.Api.Web.csprojResolveAssemblyReference.cache
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\obj\Debug\netcoreapp1.1\Provider.Api.Web.AssemblyInfo.cs
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\obj\Debug\netcoreapp1.1\Provider.Api.Web.dll
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web\obj\Debug\netcoreapp1.1\Provider.Api.Web.pdb

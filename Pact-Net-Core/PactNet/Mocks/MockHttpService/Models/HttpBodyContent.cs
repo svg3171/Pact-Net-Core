@@ -8,11 +8,11 @@ namespace PactNet.Mocks.MockHttpService.Models
 {
     internal class HttpBodyContent
     {
-        private readonly bool _contentIsBase64Encoded;
+        private bool _contentIsBase64Encoded;
 
         public dynamic Body { get; private set; }
 
-        public string Content { get; }
+        public string Content { get; private set; }
 
         public byte[] ContentBytes
         {
@@ -33,7 +33,7 @@ namespace PactNet.Mocks.MockHttpService.Models
 
         public Encoding Encoding { get; }
 
-        private HttpBodyContent(MediaTypeHeaderValue contentType)
+        public HttpBodyContent(MediaTypeHeaderValue contentType)
         {
             if (contentType == null)
             {
@@ -47,6 +47,41 @@ namespace PactNet.Mocks.MockHttpService.Models
 
             ContentType = contentType;
             Encoding = Encoding.GetEncoding(contentType.CharSet);
+        }
+
+
+        public void GenerateContent(dynamic body)
+        {
+            if (body == null)
+            {
+                throw new ArgumentNullException(nameof(body));
+            }
+
+            if (IsJsonContentType())
+            {
+                string c = JsonConvert.SerializeObject(body, JsonConfig.ApiSerializerSettings);
+                Content = c;
+                Body = body;
+            }
+            else if (IsBinaryContentType())
+            {
+                if (body is byte[])
+                {
+                    Content = Convert.ToBase64String(body);
+                    Body = body;
+                    _contentIsBase64Encoded = true;
+                }
+                else //It's a string coming from json serialised content
+                {
+                    Content = Encoding.GetString(Convert.FromBase64String(body));
+                    Body = body;
+                }
+            }
+            else
+            {
+                Content = body.ToString();
+                Body = body;
+            }
         }
 
         public HttpBodyContent(dynamic body, MediaTypeHeaderValue contentType) : this(contentType)

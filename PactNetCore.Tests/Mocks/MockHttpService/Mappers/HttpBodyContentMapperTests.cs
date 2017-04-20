@@ -27,7 +27,7 @@ namespace PactNet.Tests.Mocks.MockHttpService.Mappers
         public void Convert1_WithBodyAndNullHeaders_ReturnsBodyWithUtf8EncodingAndPlainTextContentType()
         {
             const string body = "This is my content";
-            var mapper = GetSubject();
+            IHttpBodyContentMapper mapper = GetSubject();
 
             var result = mapper.Convert(body: body, headers: null);
 
@@ -72,7 +72,7 @@ namespace PactNet.Tests.Mocks.MockHttpService.Mappers
                 { "content-type", "Application/Json" }
             };
             const string jsonBody = "{\"Test\":\"testeR\",\"tesT2\":1}";
-            var mapper = GetSubject();
+            IHttpBodyContentMapper mapper = GetSubject();
 
             var result = mapper.Convert(body: body, headers: headers);
 

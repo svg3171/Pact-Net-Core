@@ -1,10 +1,9 @@
-C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.Tests.deps.json
-C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.Tests.runtimeconfig.json
-C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.Tests.runtimeconfig.dev.json
-C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\obj\Debug\netcoreapp1.1\Consumer.Tests.AssemblyInfo.cs
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.Tests.deps.json
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.Tests.runtimeconfig.json
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.Tests.runtimeconfig.dev.json
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.Tests.dll
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.Tests.pdb
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.dll
@@ -13,5 +12,6 @@ C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Pact-Net-Core.dll.config
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\bin\Debug\netcoreapp1.1\Consumer.pdb
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\obj\Debug\netcoreapp1.1\Consumer.Tests.csprojResolveAssemblyReference.cache
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\obj\Debug\netcoreapp1.1\Consumer.Tests.AssemblyInfo.cs
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\obj\Debug\netcoreapp1.1\Consumer.Tests.dll
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Consumer.Tests\obj\Debug\netcoreapp1.1\Consumer.Tests.pdb

@@ -3,12 +3,12 @@ using Xunit;
 
 namespace PactNet.Tests.IntegrationTests
 {
-    public class PactBuilderIntegrationTests : ICollectionFixture<IntegrationTestsMyApiPact>
+    public class PactBuilderIntegrationTests : IClassFixture<IntegrationTestsMyApiPact>
     {
         private IMockProviderService _mockProviderService;
         private string _mockProviderServiceBaseUri;
 
-        public void SetFixture(IntegrationTestsMyApiPact data)
+        public PactBuilderIntegrationTests(IntegrationTestsMyApiPact data)
         {
             _mockProviderService = data.MockProviderService;
             _mockProviderServiceBaseUri = data.MockProviderServiceBaseUri;

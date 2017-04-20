@@ -17,10 +17,8 @@ namespace PactNet.Mocks.MockHttpService.Mappers
                 return null;
 
             MediaTypeHeaderValue parsedHeaders = ParseContentTypeHeader(headers);
-            int ba = Encoding.ASCII.GetBytes(ConvertBodyToString(body));
-            
-            var bodyContent = new HttpBodyContent(ba, parsedHeaders);
-
+            var bodyContent = new HttpBodyContent(parsedHeaders);
+            bodyContent.GenerateContent(body);
             return bodyContent;
         }
 
@@ -29,6 +27,7 @@ namespace PactNet.Mocks.MockHttpService.Mappers
         private string ConvertBodyToString(dynamic body)
         {
             string c = JsonConvert.SerializeObject(body, JsonConfig.ApiSerializerSettings);
+            c = c.Replace("\"", "");
             return c;
         }
 
