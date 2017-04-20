@@ -161,3 +161,933 @@
 2017-04-20 09:31:24.412 -04:00 [Info] Cleared interactions
 2017-04-20 09:39:06.372 -04:00 [Info] Started http://localhost:1234
 2017-04-20 09:39:17.758 -04:00 [Info] Cleared interactions
+2017-04-20 09:48:03.553 -04:00 [Info] Started http://localhost:1234
+2017-04-20 09:48:16.106 -04:00 [Info] Cleared interactions
+2017-04-20 09:58:38.600 -04:00 [Info] Started http://localhost:1234
+2017-04-20 09:58:50.199 -04:00 [Info] Cleared interactions
+2017-04-20 09:59:27.040 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 09:59:42.269 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 09:59:42.273 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 09:59:42.394 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 09:59:42.394 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 09:59:54.630 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 09:59:54.630 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 09:59:54.829 -04:00 [Error] Failed to handle the request. Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException: An unexpected exception occurred while binding a dynamic operation
+   at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 14
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52 -    at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 14
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52
+2017-04-20 10:00:43.114 -04:00 [Info] Cleared interactions
+2017-04-20 10:00:43.211 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 10:07:24.448 -04:00 [Info] Started http://localhost:1234
+2017-04-20 10:07:34.201 -04:00 [Info] Cleared interactions
+2017-04-20 10:08:05.071 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 10:08:17.143 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:08:17.145 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 10:08:17.255 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:08:17.255 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 10:08:29.084 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:08:29.085 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 10:10:47.752 -04:00 [Error] Failed to handle the request. Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException: An unexpected exception occurred while binding a dynamic operation
+   at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 14
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52 -    at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 14
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52
+2017-04-20 10:11:01.141 -04:00 [Info] Cleared interactions
+2017-04-20 10:11:01.266 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 10:12:30.960 -04:00 [Info] Started http://localhost:1234
+2017-04-20 10:12:51.135 -04:00 [Info] Cleared interactions
+2017-04-20 10:13:00.749 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 10:13:06.611 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:13:06.615 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 10:13:06.728 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:13:06.728 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 10:13:17.542 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:13:17.543 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 10:13:26.202 -04:00 [Error] Failed to handle the request. Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException: An unexpected exception occurred while binding a dynamic operation
+   at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 14
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52 -    at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 14
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52
+2017-04-20 10:30:19.215 -04:00 [Info] Started http://localhost:1234
+2017-04-20 10:30:56.104 -04:00 [Info] Cleared interactions
+2017-04-20 10:31:17.184 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 10:31:46.398 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:31:46.401 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 10:31:46.518 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:31:46.518 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 10:32:32.745 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:32:32.745 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 10:39:26.672 -04:00 [Info] Started http://localhost:1234
+2017-04-20 10:39:27.322 -04:00 [Info] Cleared interactions
+2017-04-20 10:39:27.746 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 10:39:27.774 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:39:27.776 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 10:39:27.885 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:39:27.886 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 10:39:27.926 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:39:27.926 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 10:52:23.370 -04:00 [Info] Started http://localhost:1234
+2017-04-20 10:52:23.889 -04:00 [Info] Cleared interactions
+2017-04-20 10:52:24.205 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 10:52:24.226 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:52:24.228 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 10:52:24.306 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:52:24.306 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 10:52:24.333 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:52:24.333 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 10:53:42.220 -04:00 [Error] Failed to handle the request. Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException: An unexpected exception occurred while binding a dynamic operation
+   at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52 -    at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52
+2017-04-20 10:55:45.656 -04:00 [Info] Cleared interactions
+2017-04-20 10:55:45.751 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 10:57:28.929 -04:00 [Info] Started http://localhost:1234
+2017-04-20 10:57:29.438 -04:00 [Info] Cleared interactions
+2017-04-20 10:57:29.738 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 10:57:29.762 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:57:29.764 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 10:57:29.843 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:57:29.843 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 10:57:29.868 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:57:29.868 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 10:57:40.204 -04:00 [Error] Failed to handle the request. Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException: An unexpected exception occurred while binding a dynamic operation
+   at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52 -    at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52
+2017-04-20 10:57:43.050 -04:00 [Info] Cleared interactions
+2017-04-20 10:57:43.148 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 10:58:15.300 -04:00 [Info] Started http://localhost:1234
+2017-04-20 10:58:15.777 -04:00 [Info] Cleared interactions
+2017-04-20 10:58:16.097 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 10:58:16.119 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:58:16.121 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 10:58:16.191 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:58:16.191 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 10:58:16.219 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 10:58:16.219 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 10:59:25.697 -04:00 [Error] Failed to handle the request. Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException: An unexpected exception occurred while binding a dynamic operation
+   at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52 -    at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52
+2017-04-20 10:59:34.824 -04:00 [Info] Cleared interactions
+2017-04-20 10:59:34.925 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 11:03:11.710 -04:00 [Info] Started http://localhost:1234
+2017-04-20 11:03:12.189 -04:00 [Info] Cleared interactions
+2017-04-20 11:03:12.519 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 11:03:12.546 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:03:12.548 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 11:03:12.626 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:03:12.627 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 11:03:12.651 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:03:12.651 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 11:06:49.283 -04:00 [Info] Started http://localhost:1234
+2017-04-20 11:06:49.796 -04:00 [Info] Cleared interactions
+2017-04-20 11:06:50.082 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 11:06:50.106 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:06:50.108 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 11:06:50.199 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:06:50.199 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 11:06:50.224 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:06:50.224 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 11:09:19.813 -04:00 [Info] Started http://localhost:1234
+2017-04-20 11:09:20.340 -04:00 [Info] Cleared interactions
+2017-04-20 11:09:20.677 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 11:09:20.705 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:09:20.707 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 11:09:20.785 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:09:20.786 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 11:09:20.816 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:09:20.816 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 11:09:59.404 -04:00 [Error] Failed to handle the request. Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException: An unexpected exception occurred while binding a dynamic operation
+   at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52 -    at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52
+2017-04-20 11:10:03.137 -04:00 [Info] Cleared interactions
+2017-04-20 11:10:03.250 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 11:14:22.461 -04:00 [Info] Started http://localhost:1234
+2017-04-20 11:14:22.956 -04:00 [Info] Cleared interactions
+2017-04-20 11:14:23.277 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 11:14:23.305 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:14:23.307 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 11:14:23.386 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:14:23.386 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 11:14:23.412 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:14:23.412 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 11:14:35.506 -04:00 [Error] Failed to handle the request. Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException: An unexpected exception occurred while binding a dynamic operation
+   at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52 -    at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 19
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52
+2017-04-20 11:14:39.269 -04:00 [Info] Cleared interactions
+2017-04-20 11:14:39.362 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 11:22:30.289 -04:00 [Info] Started http://localhost:1234
+2017-04-20 11:22:30.795 -04:00 [Info] Cleared interactions
+2017-04-20 11:22:31.100 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 11:22:31.122 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:22:31.124 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 11:22:31.221 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:22:31.221 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 11:22:31.246 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:22:31.247 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 11:36:28.906 -04:00 [Info] Started http://localhost:1234
+2017-04-20 11:36:29.399 -04:00 [Info] Cleared interactions
+2017-04-20 11:36:29.719 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 11:36:29.742 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:36:29.744 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 11:36:29.817 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:36:29.817 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 11:36:29.850 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:36:29.850 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 11:37:05.794 -04:00 [Error] Failed to handle the request. Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderInternalCompilerException: An unexpected exception occurred while binding a dynamic operation
+   at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 18
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52 -    at Microsoft.CSharp.RuntimeBinder.RuntimeBinder.Bind(DynamicMetaObjectBinder payload, IEnumerable`1 parameters, DynamicMetaObject[] args, DynamicMetaObject& deferredBinding)
+   at Microsoft.CSharp.RuntimeBinder.BinderHelper.Bind(DynamicMetaObjectBinder action, RuntimeBinder binder, IEnumerable`1 args, IEnumerable`1 arginfos, DynamicMetaObject onBindingError)
+   at Microsoft.CSharp.RuntimeBinder.CSharpInvokeConstructorBinder.Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+   at System.Dynamic.DynamicMetaObjectBinder.Bind(Object[] args, ReadOnlyCollection`1 parameters, LabelTarget returnLabel)
+   at System.Runtime.CompilerServices.CallSiteBinder.BindCore[T](CallSite`1 site, Object[] args)
+   at System.Runtime.CompilerServices.CallSiteOps.Bind[T](CallSiteBinder binder, CallSite`1 site, Object[] args)
+   at CallSite.Target(Closure , CallSite , Type , Object , MediaTypeHeaderValue )
+   at PactNet.Mocks.MockHttpService.Mappers.HttpBodyContentMapper.Convert(Object body, IDictionary`2 headers) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\HttpBodyContentMapper.cs:line 18
+   at CallSite.Target(Closure , CallSite , IHttpBodyContentMapper , Object , IDictionary`2 )
+   at PactNet.Mocks.MockHttpService.Mappers.NancyResponseMapper.Convert(ProviderServiceResponse from) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Mappers\NancyResponseMapper.cs:line 35
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.HandlePactRequest(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 61
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderRequestHandler.Handle(NancyContext context) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderRequestHandler.cs:line 32
+   at PactNet.Mocks.MockHttpService.Nancy.MockProviderNancyRequestDispatcher.Dispatch(NancyContext context, CancellationToken cancellationToken) in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\MockProviderNancyRequestDispatcher.cs:line 52
+2017-04-20 11:37:14.377 -04:00 [Info] Cleared interactions
+2017-04-20 11:37:14.463 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 11:43:18.422 -04:00 [Info] Started http://localhost:1234
+2017-04-20 11:43:18.920 -04:00 [Info] Cleared interactions
+2017-04-20 11:43:19.247 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-20 11:43:19.272 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:43:19.274 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-20 11:43:19.353 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:43:19.353 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-20 11:43:19.381 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-20 11:43:19.381 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-20 11:44:44.510 -04:00 [Info] Verifying - interactions matched
+2017-04-20 11:44:44.690 -04:00 [Info] Cleared interactions
+2017-04-20 11:44:44.802 -04:00 [Info] Stopped http://localhost:1234

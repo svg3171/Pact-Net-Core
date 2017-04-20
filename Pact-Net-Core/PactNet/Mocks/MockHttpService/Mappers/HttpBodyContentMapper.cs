@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
+using Newtonsoft.Json;
+using PactNet.Configuration.Json;
 using PactNet.Mocks.MockHttpService.Models;
 
 namespace PactNet.Mocks.MockHttpService.Mappers
@@ -11,17 +13,36 @@ namespace PactNet.Mocks.MockHttpService.Mappers
     {
         public HttpBodyContent Convert(dynamic body, IDictionary<string, string> headers)
         {
-            return body == null
-                ? null
-                : new HttpBodyContent(body, this.ParseContentTypeHeader(headers));
+            if (body == null)
+                return null;
+
+            MediaTypeHeaderValue parsedHeaders = ParseContentTypeHeader(headers);
+            int ba = Encoding.ASCII.GetBytes(ConvertBodyToString(body));
+            
+            var bodyContent = new HttpBodyContent(ba, parsedHeaders);
+
+            return bodyContent;
         }
+
+
+
+        private string ConvertBodyToString(dynamic body)
+        {
+            string c = JsonConvert.SerializeObject(body, JsonConfig.ApiSerializerSettings);
+            return c;
+        }
+
 
         public HttpBodyContent Convert(byte[] content, IDictionary<string, string> headers)
         {
-            return content == null
-                ? null
-                : new HttpBodyContent(content, this.ParseContentTypeHeader(headers));
+            if (content == null)
+                return null;
+
+            var bodyContent = new HttpBodyContent(content, ParseContentTypeHeader(headers));
+
+            return bodyContent;
         }
+
 
         private MediaTypeHeaderValue ParseContentTypeHeader(IDictionary<string, string> headers)
         {

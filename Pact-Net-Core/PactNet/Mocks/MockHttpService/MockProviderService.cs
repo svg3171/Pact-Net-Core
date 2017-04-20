@@ -5,8 +5,6 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading;
-using Microsoft.DotNet.InternalAbstractions;
-using Microsoft.Extensions.DependencyModel;
 using Nancy.Extensions;
 using Newtonsoft.Json;
 using PactNet.Configuration.Json;
@@ -227,14 +225,7 @@ namespace PactNet.Mocks.MockHttpService
 
         private static string BuildTestContext()
         {
-            var runtimeId = RuntimeEnvironment.GetRuntimeIdentifier();
-            var assemblies = DependencyContext.Default.GetRuntimeAssemblyNames(runtimeId);
-
-            foreach (var assembly in assemblies)
-            {
-                Console.WriteLine(assembly.FullName);
-            }
-
+            return "EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail";
             try
             {
                 throw new Exception("HACK!!");
