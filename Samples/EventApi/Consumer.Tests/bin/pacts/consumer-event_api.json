@@ -1,0 +1,12 @@
+{
+  "provider": {
+    "name": "Event API"
+  },
+  "consumer": {
+    "name": "Consumer"
+  },
+  "interactions": [],
+  "metadata": {
+    "pactSpecificationVersion": "1.1.0"
+  }
+}

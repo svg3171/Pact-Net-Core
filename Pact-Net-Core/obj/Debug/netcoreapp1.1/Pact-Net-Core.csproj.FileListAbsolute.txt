@@ -1,0 +1,8 @@
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\bin\Debug\netcoreapp1.1\Pact-Net-Core.dll.config
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\bin\Debug\netcoreapp1.1\Pact-Net-Core.deps.json
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\bin\Debug\netcoreapp1.1\Pact-Net-Core.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\bin\Debug\netcoreapp1.1\Pact-Net-Core.pdb
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\obj\Debug\netcoreapp1.1\Pact-Net-Core.AssemblyInfo.cs
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\obj\Debug\netcoreapp1.1\Pact-Net-Core.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\obj\Debug\netcoreapp1.1\Pact-Net-Core.pdb
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\obj\Debug\netcoreapp1.1\Pact-Net-Core.csprojResolveAssemblyReference.cache

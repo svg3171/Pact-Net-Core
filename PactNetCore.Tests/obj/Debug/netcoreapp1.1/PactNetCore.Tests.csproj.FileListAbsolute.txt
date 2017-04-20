@@ -1,0 +1,16 @@
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\PactNetCore.Tests.deps.json
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\PactNetCore.Tests.runtimeconfig.json
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\PactNetCore.Tests.runtimeconfig.dev.json
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\obj\Debug\netcoreapp1.1\PactNetCore.Tests.csprojResolveAssemblyReference.cache
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\obj\Debug\netcoreapp1.1\PactNetCore.Tests.AssemblyInfo.cs
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\PactNetCore.Tests.dll.config
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\PactNetCore.Tests.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\Pact-Net-Core.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\Pact-Net-Core.pdb
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\Pact-Net-Core.dll.config
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\bin\Debug\netcoreapp1.1\PactNetCore.Tests.pdb
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\obj\Debug\netcoreapp1.1\PactNetCore.Tests.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\PactNetCore.Tests\obj\Debug\netcoreapp1.1\PactNetCore.Tests.pdb

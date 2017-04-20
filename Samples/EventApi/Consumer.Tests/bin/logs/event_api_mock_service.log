@@ -1,0 +1,163 @@
+﻿2017-04-19 13:20:41.426 -04:00 [Info] Started http://localhost:1234
+2017-04-19 13:20:41.829 -04:00 [Info] Cleared interactions
+2017-04-19 13:21:24.127 -04:00 [Info] Cleared interactions
+2017-04-19 13:21:24.187 -04:00 [Info] Stopped http://localhost:1234
+2017-04-19 13:26:34.294 -04:00 [Info] Received request POST /interactions
+2017-04-19 13:26:34.323 -04:00 [Debug] {
+  "method": "post",
+  "path": "/interactions",
+  "headers": {
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Length": "442",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Host": "localhost:1234",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36",
+    "Origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+    "Postman-Token": "c69e3347-790d-c7b1-e579-7ec6da20927f"
+  },
+  "body": "{\"description\":\"a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"provider_state\":\"there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"request\":{\"method\":\"get\",\"path\":\"/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9\",\"headers\":{\"Accept\":\"application/json\"}},\"response\":{\"status\":200,\"headers\":{\"Content-Type\":\"application/json; charset=utf-8\"},\"body\":{\"eventId\":\"83f9262f-28f1-4703-ab1a-8cfd9e8249c9\"}}}"
+}
+2017-04-19 13:26:34.382 -04:00 [Error] No matching interaction found for POST /interactions
+2017-04-19 13:30:29.056 -04:00 [Info] Started http://localhost:1234
+2017-04-19 13:30:29.453 -04:00 [Info] Cleared interactions
+2017-04-19 13:33:21.403 -04:00 [Info] Cleared interactions
+2017-04-19 13:33:21.474 -04:00 [Info] Stopped http://localhost:1234
+2017-04-19 13:37:32.649 -04:00 [Info] Received request POST /interactions
+2017-04-19 13:37:32.678 -04:00 [Debug] {
+  "method": "post",
+  "path": "/interactions",
+  "headers": {
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Length": "442",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Host": "localhost:1234",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36",
+    "Origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+    "Postman-Token": "636e5ddc-0018-7980-d4c4-3d830ad1991b"
+  },
+  "body": "{\"description\":\"a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"provider_state\":\"there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"request\":{\"method\":\"get\",\"path\":\"/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9\",\"headers\":{\"Accept\":\"application/json\"}},\"response\":{\"status\":200,\"headers\":{\"Content-Type\":\"application/json; charset=utf-8\"},\"body\":{\"eventId\":\"83f9262f-28f1-4703-ab1a-8cfd9e8249c9\"}}}"
+}
+2017-04-19 13:45:44.866 -04:00 [Info] Received request POST /interactions
+2017-04-19 13:45:44.925 -04:00 [Debug] {
+  "method": "post",
+  "path": "/interactions",
+  "headers": {
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Length": "442",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Host": "localhost:1234",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36",
+    "Origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+    "Postman-Token": "ab64c98c-e118-945f-cc86-c8c7b6454fcc"
+  },
+  "body": "{\"description\":\"a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"provider_state\":\"there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"request\":{\"method\":\"get\",\"path\":\"/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9\",\"headers\":{\"Accept\":\"application/json\"}},\"response\":{\"status\":200,\"headers\":{\"Content-Type\":\"application/json; charset=utf-8\"},\"body\":{\"eventId\":\"83f9262f-28f1-4703-ab1a-8cfd9e8249c9\"}}}"
+}
+2017-04-19 13:45:44.928 -04:00 [Error] No matching interaction found for POST /interactions
+2017-04-19 13:45:57.112 -04:00 [Info] Received request POST /interactions
+2017-04-19 13:45:57.112 -04:00 [Debug] {
+  "method": "post",
+  "path": "/interactions",
+  "headers": {
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Length": "442",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Host": "localhost:1234",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36",
+    "Origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+    "Postman-Token": "3852ff45-d679-e478-47d8-bf0b6e45ed2d"
+  },
+  "body": "{\"description\":\"a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"provider_state\":\"there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"request\":{\"method\":\"get\",\"path\":\"/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9\",\"headers\":{\"Accept\":\"application/json\"}},\"response\":{\"status\":200,\"headers\":{\"Content-Type\":\"application/json; charset=utf-8\"},\"body\":{\"eventId\":\"83f9262f-28f1-4703-ab1a-8cfd9e8249c9\"}}}"
+}
+2017-04-19 13:45:57.112 -04:00 [Error] No matching interaction found for POST /interactions
+2017-04-19 13:46:01.272 -04:00 [Info] Received request POST /interactions
+2017-04-19 13:46:01.272 -04:00 [Debug] {
+  "method": "post",
+  "path": "/interactions",
+  "headers": {
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Length": "442",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Host": "localhost:1234",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36",
+    "Origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+    "Postman-Token": "718a73a8-b16d-d7b6-f3c0-92a5c6477d28"
+  },
+  "body": "{\"description\":\"a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"provider_state\":\"there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"request\":{\"method\":\"get\",\"path\":\"/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9\",\"headers\":{\"Accept\":\"application/json\"}},\"response\":{\"status\":200,\"headers\":{\"Content-Type\":\"application/json; charset=utf-8\"},\"body\":{\"eventId\":\"83f9262f-28f1-4703-ab1a-8cfd9e8249c9\"}}}"
+}
+2017-04-19 13:46:01.272 -04:00 [Error] No matching interaction found for POST /interactions
+2017-04-19 13:48:56.071 -04:00 [Info] Received request POST /interactions
+2017-04-19 13:48:56.102 -04:00 [Debug] {
+  "method": "post",
+  "path": "/interactions",
+  "headers": {
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Length": "442",
+    "Content-Type": "text/plain;charset=UTF-8",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Host": "localhost:1234",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36",
+    "Origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+    "Postman-Token": "14e16625-3af1-9a75-ba6e-687ee9a48bee"
+  },
+  "body": "{\"description\":\"a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"provider_state\":\"there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'\",\"request\":{\"method\":\"get\",\"path\":\"/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9\",\"headers\":{\"Accept\":\"application/json\"}},\"response\":{\"status\":200,\"headers\":{\"Content-Type\":\"application/json; charset=utf-8\"},\"body\":{\"eventId\":\"83f9262f-28f1-4703-ab1a-8cfd9e8249c9\"}}}"
+}
+2017-04-20 07:53:03.986 -04:00 [Info] Started http://localhost:1234
+2017-04-20 07:54:24.915 -04:00 [Info] Cleared interactions
+2017-04-20 07:55:26.967 -04:00 [Info] Cleared interactions
+2017-04-20 07:55:27.037 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 08:01:01.730 -04:00 [Error] System.IO.IOException: Failed to bind to address http://localhost:1234. ---> System.AggregateException: One or more errors occurred. (Error -4092 EACCES permission denied) (Error -4092 EACCES permission denied) ---> Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvException: Error -4092 EACCES permission denied
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.Libuv.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.Libuv.ThrowIfErrored(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.Libuv.tcp_bind(UvTcpHandle handle, SockAddr& addr, Int32 flags)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvTcpHandle.Bind(ServerAddress address)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.TcpListenerPrimary.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Listener.<StartAsync>b__8_0(Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.ListenerPrimary.<StartAsync>d__12.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelServer.Start[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Start()
+   at PactNet.Mocks.MockHttpService.Nancy.NancyHttpHost.Start() in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\NancyHttpHost.cs:line 69
+2017-04-20 08:01:01.736 -04:00 [Info] Started http://localhost:1234
+2017-04-20 08:16:14.306 -04:00 [Info] Started http://localhost:1234
+2017-04-20 08:16:29.867 -04:00 [Info] Cleared interactions
+2017-04-20 08:17:21.218 -04:00 [Info] Cleared interactions
+2017-04-20 08:17:21.275 -04:00 [Info] Stopped http://localhost:1234
+2017-04-20 08:19:04.026 -04:00 [Info] Started http://localhost:1234
+2017-04-20 08:23:08.888 -04:00 [Info] Started http://localhost:1234
+2017-04-20 08:23:37.989 -04:00 [Info] Cleared interactions
+2017-04-20 08:51:32.155 -04:00 [Info] Started http://localhost:1234
+2017-04-20 08:51:43.498 -04:00 [Info] Cleared interactions
+2017-04-20 09:08:38.441 -04:00 [Info] Started http://localhost:1234
+2017-04-20 09:08:50.861 -04:00 [Info] Cleared interactions
+2017-04-20 09:31:06.720 -04:00 [Info] Started http://localhost:1234
+2017-04-20 09:31:24.412 -04:00 [Info] Cleared interactions
+2017-04-20 09:39:06.372 -04:00 [Info] Started http://localhost:1234
+2017-04-20 09:39:17.758 -04:00 [Info] Cleared interactions
