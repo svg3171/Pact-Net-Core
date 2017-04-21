@@ -49,8 +49,8 @@ namespace PactNet.Mocks.MockHttpService.Mappers
 
             if (from.Body != null && from.Body.Length > 0)
             {
-                var httpBodyContent = _httpBodyContentMapper.Convert(content: ConvertStreamToBytes(from.Body), headers: to.Headers);
-
+                var streamArray = ConvertStreamToBytes(from.Body);
+                HttpBodyContent httpBodyContent = _httpBodyContentMapper.Convert(content: streamArray, headers: to.Headers);
                 to.Body = httpBodyContent.Body;
             }
 
@@ -62,7 +62,8 @@ namespace PactNet.Mocks.MockHttpService.Mappers
             using (var memoryStream = new MemoryStream())
             {
                 content.CopyTo(memoryStream);
-                return memoryStream.ToArray();
+                var streamArray = memoryStream.ToArray();
+                return streamArray;
             }
         }
     }

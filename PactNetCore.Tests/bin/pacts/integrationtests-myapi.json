@@ -6,7 +6,7 @@
     "name": "IntegrationTests"
   },
   "interactions": [],
-  "metadata": {
-    "pactSpecificationVersion": "1.1.0"
+  "Metadata": {
+    "PactSpecificationVersion": "1.1.0"
   }
 }

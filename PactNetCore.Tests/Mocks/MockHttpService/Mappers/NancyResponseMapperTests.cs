@@ -103,7 +103,9 @@ namespace PactNet.Tests.Mocks.MockHttpService.Mappers
                 },
                 Body = "This is a plain body"
             };
-            var httpBodyContent = new HttpBodyContent(body: response.Body, contentType: new MediaTypeHeaderValue(contentTypeString) { CharSet = "utf-8" });
+
+            var httpBodyContent = new HttpBodyContent(new MediaTypeHeaderValue(contentTypeString) { CharSet = "utf-8" });
+            httpBodyContent.GenerateContent(response.Body);
 
             var mockHttpBodyContentMapper = Substitute.For<IHttpBodyContentMapper>();
 

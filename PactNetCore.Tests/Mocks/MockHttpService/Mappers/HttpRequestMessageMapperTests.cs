@@ -256,7 +256,9 @@ namespace PactNet.Tests.Mocks.MockHttpService.Mappers
                 },
                 Body = "Some content"
             };
-            var httpBodyContent = new HttpBodyContent(body: request.Body, contentType: new MediaTypeHeaderValue("text/plain") { CharSet = "utf-8" });
+            var httpBodyContent = new HttpBodyContent(contentType: new MediaTypeHeaderValue("text/plain") { CharSet = "utf-8" });
+            httpBodyContent.GenerateContent(request.Body);
+
             var stringContent = new StringContent(request.Body, Encoding.UTF8, "text/plain");
 
             var mapper = GetSubject();
@@ -284,7 +286,9 @@ namespace PactNet.Tests.Mocks.MockHttpService.Mappers
                 },
                 Body = "Some content"
             };
-            var httpBodyContent = new HttpBodyContent(body: request.Body, contentType: new MediaTypeHeaderValue("text/plain") { CharSet = "utf-8" });
+            var httpBodyContent = new HttpBodyContent(contentType: new MediaTypeHeaderValue("text/plain") { CharSet = "utf-8" });
+            httpBodyContent.GenerateContent(request.Body);
+
             var stringContent = new StringContent(request.Body, Encoding.UTF8, "text/plain");
 
             var mapper = GetSubject();
@@ -313,7 +317,9 @@ namespace PactNet.Tests.Mocks.MockHttpService.Mappers
                 },
                 Body = Encoding.UTF8.GetBytes("Some content")
             };
-            var httpBodyContent = new HttpBodyContent(body: request.Body, contentType: new MediaTypeHeaderValue("text/plain") { CharSet = "utf-8" });
+            var httpBodyContent = new HttpBodyContent(new MediaTypeHeaderValue("text/plain") { CharSet = "utf-8" });
+            httpBodyContent.GenerateContent(request.Body);
+
             var byteArrayContent = new ByteArrayContent(request.Body as byte[]);
 
             var mapper = GetSubject();
@@ -374,7 +380,8 @@ namespace PactNet.Tests.Mocks.MockHttpService.Mappers
                     Testing = 1
                 }
             };
-            var httpBodyContent = new HttpBodyContent(body: bodyJson, contentType: new MediaTypeHeaderValue(contentTypeString) { CharSet = encodingString });
+            var httpBodyContent = new HttpBodyContent(new MediaTypeHeaderValue(contentTypeString) { CharSet = encodingString });
+            httpBodyContent.GenerateContent(bodyJson);
 
             var mapper = GetSubject();
 

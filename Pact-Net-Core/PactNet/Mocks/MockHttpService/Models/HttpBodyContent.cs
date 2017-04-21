@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 using System.Text;
 using Newtonsoft.Json;
 using PactNet.Configuration.Json;
 
 namespace PactNet.Mocks.MockHttpService.Models
 {
-    internal class HttpBodyContent
+    public class HttpBodyContent
     {
         private bool _contentIsBase64Encoded;
 
@@ -79,44 +80,37 @@ namespace PactNet.Mocks.MockHttpService.Models
             }
             else
             {
-                Content = body.ToString();
-                Body = body;
-            }
-        }
-
-        public HttpBodyContent(dynamic body, MediaTypeHeaderValue contentType) : this(contentType)
-        {
-            if (body == null)
-            {
-                throw new ArgumentNullException(nameof(body));
-            }
-
-            if (IsJsonContentType())
-            {
-                string c = JsonConvert.SerializeObject(body, JsonConfig.ApiSerializerSettings);
-                Content = c;
-                Body = body;
-            }
-            else if (IsBinaryContentType())
-            {
                 if (body is byte[])
                 {
-                    Content = Convert.ToBase64String(body);
+                    Content = Encoding.ASCII.GetString(body);
                     Body = body;
-                    _contentIsBase64Encoded = true;
                 }
-                else //It's a string coming from json serialised content
+                else
                 {
-                    Content = Encoding.GetString(Convert.FromBase64String(body));
-                    Body = body;
+                    Type bodyType = body.GetType();
+                    if (bodyType.Name == "RequestStream")
+                    {
+                        int length = (int)body.Length; 
+                        byte[] data = new byte[length];
+                        body.Read(data, 0, length);
+                        Content = Encoding.ASCII.GetString(data);
+                        Body = Content;
+                        return;
+                    }
+
+                    if (body is string)
+                    {
+                        string stringContent = body;
+                        Content = stringContent;
+                        Body = stringContent;
+                        return;
+                    }
+
+                    throw new ArgumentException("Dynamic body is of unknown type");
                 }
-            }
-            else
-            {
-                Content = body.ToString();
-                Body = body;
             }
         }
+
 
         public HttpBodyContent(byte[] content, MediaTypeHeaderValue contentType) : this(contentType)
         {

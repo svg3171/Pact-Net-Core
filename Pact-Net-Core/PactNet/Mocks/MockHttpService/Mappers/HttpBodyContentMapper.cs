@@ -23,15 +23,6 @@ namespace PactNet.Mocks.MockHttpService.Mappers
         }
 
 
-
-        private string ConvertBodyToString(dynamic body)
-        {
-            string c = JsonConvert.SerializeObject(body, JsonConfig.ApiSerializerSettings);
-            c = c.Replace("\"", "");
-            return c;
-        }
-
-
         public HttpBodyContent Convert(byte[] content, IDictionary<string, string> headers)
         {
             if (content == null)

@@ -137,8 +137,9 @@ namespace PactNet.Tests.Mocks.MockHttpService.Mappers
         public void Convert_WithPlainTextBody_CallsHttpBodyContentMapperAndCorrectlySetsBody()
         {
             const string content = "Plain text body";
-            var request = GetPreCannedRequest(content: content);
-            var httpBodyContent = new HttpBodyContent(content, new MediaTypeHeaderValue("text/plain") { CharSet = "utf-8" });
+            Request request = GetPreCannedRequest(content: content);
+            var httpBodyContent = new HttpBodyContent(new MediaTypeHeaderValue("text/plain") { CharSet = "utf-8" });
+            httpBodyContent.GenerateContent(request.Body);
 
             var mockHttpVerbMapper = Substitute.For<IHttpVerbMapper>();
             var mockHttpBodyContentMapper = Substitute.For<IHttpBodyContentMapper>();
@@ -147,9 +148,9 @@ namespace PactNet.Tests.Mocks.MockHttpService.Mappers
 
             var mapper = new ProviderServiceRequestMapper(mockHttpVerbMapper, mockHttpBodyContentMapper);
 
-            var result = mapper.Convert(request);
-
+            ProviderServiceRequest result = mapper.Convert(request);
             Assert.Equal(content, result.Body);
+
             mockHttpBodyContentMapper.Received(1).Convert(content: Arg.Any<byte[]>(), headers: null);
         }
 

@@ -22,9 +22,33 @@
       "response": {
         "status": 201
       }
+    },
+    {
+      "description": "A GET request to retrieve things by type",
+      "request": {
+        "method": "get",
+        "path": "/things",
+        "query": "type=awesome",
+        "headers": {
+          "Accept": "application/json; charset=utf-8"
+        }
+      },
+      "response": {
+        "status": 200
+      }
+    },
+    {
+      "description": "A GET request to retrieve a thing",
+      "request": {
+        "method": "get",
+        "path": "/things/1234"
+      },
+      "response": {
+        "status": 200
+      }
     }
   ],
-  "metadata": {
-    "pactSpecificationVersion": "1.1.0"
+  "Metadata": {
+    "PactSpecificationVersion": "1.1.0"
   }
 }

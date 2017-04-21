@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using NSubstitute;
 //using NSubstitute;
 using PactNet.Logging;
 using PactNet.Reporters;
@@ -13,7 +14,7 @@ namespace PactNet.Tests.Reporters.Outputters
 
         private IReportOutputter GetSubject()
         {
-  //          _log = Substitute.For<ILog>();
+            _log = Substitute.For<ILog>();
 
             return new FileReportOutputter(() => _log);
         }
@@ -26,7 +27,7 @@ namespace PactNet.Tests.Reporters.Outputters
 
             outputter.Write(report);
 
-//            _log.Received(1).Debug(report);
+            _log.Received(1).Debug(report);
         }
     }
 }
