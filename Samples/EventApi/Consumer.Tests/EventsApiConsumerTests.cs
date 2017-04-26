@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Text;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Models;
+using PactNet.TestContextInfo;
 using Xunit;
 
 namespace Consumer.Tests
@@ -26,6 +27,8 @@ namespace Consumer.Tests
         [Fact]
         public void GetAllEvents_WithNoAuthorizationToken_ShouldFail()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             _mockProviderService.Given("there are events with ids '45D80D13-D5A2-48D7-8353-CBB4C0EAABF5', '83F9262F-28F1-4703-AB1A-8CFD9E8249C9' and '3E83A96B-2A0C-49B1-9959-26DF23F83AEB'")
                 .UponReceiving("a request to retrieve all events with no authorization")
@@ -62,6 +65,8 @@ namespace Consumer.Tests
         [Fact]
         public void GetAllEvents_WhenCalled_ReturnsAllEvents()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             var testAuthToken = "SomeValidAuthToken";
 
@@ -123,6 +128,8 @@ namespace Consumer.Tests
         [Fact]
         public void CreateEvent_WhenCalledWithEvent_Succeeds()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             var eventId = Guid.Parse("1F587704-2DCC-4313-A233-7B62B4B469DB");
             var dateTime = new DateTime(2011, 07, 01, 01, 41, 03);
@@ -160,6 +167,8 @@ namespace Consumer.Tests
         [Fact]
         public void IsAlive_WhenApiIsAlive_ReturnsTrue()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             _mockProviderService.UponReceiving("a request to check the api status")
                 .With(new ProviderServiceRequest
@@ -199,6 +208,8 @@ namespace Consumer.Tests
         [Fact]
         public void UpSince_WhenApiIsAliveAndWeRetrieveUptime_ReturnsUpSinceDate()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             var upSinceDate = new DateTime(2014, 6, 27, 23, 51, 12, DateTimeKind.Utc);
 
@@ -258,6 +269,8 @@ namespace Consumer.Tests
         [Fact]
         public void GetEventById_WhenTheEventExists_ReturnsEvent()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             var eventId = Guid.Parse("83F9262F-28F1-4703-AB1A-8CFD9E8249C9");
             _mockProviderService.Given(String.Format("there is an event with id '{0}'", eventId))
@@ -298,6 +311,8 @@ namespace Consumer.Tests
         [Fact]
         public void GetEventsByType_WhenOneEventWithTheTypeExists_ReturnsEvent()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             const string eventType = "DetailsView";
             _mockProviderService.Given(String.Format("there is one event with type '{0}'", eventType))
@@ -343,6 +358,8 @@ namespace Consumer.Tests
         [Fact]
         public void CreateBlob_WhenCalledWithBlob_Succeeds()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             var blobId = Guid.Parse("38C3976B-5AE8-4F2F-A8EC-46F6AEE826E2");
             var bytes = Encoding.UTF8.GetBytes("This is a test");
@@ -374,6 +391,8 @@ namespace Consumer.Tests
         [Fact]
         public void GetBlob_WhenCalledWithId_Succeeds()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             var blobId = Guid.Parse("38C3976B-5AE8-4F2F-A8EC-46F6AEE826E2");
             var bytes = Encoding.UTF8.GetBytes("This is a test");

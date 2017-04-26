@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using PactNet;
+using PactNet.Logging;
 using PactNet.Mocks.MockHttpService.Nancy;
 using PactNet.Reporters.Outputters;
+using PactNet.TestContextInfo;
 using Xunit;
 
 
@@ -17,6 +19,8 @@ namespace Provider.Api.Web.Tests
         [Fact]
         public void EnsureEventApiHonoursPactWithConsumer()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             //Arrange
             var outputter = new CustomOutputter();
             var config = new PactVerifierConfig();
@@ -32,15 +36,13 @@ namespace Provider.Api.Web.Tests
                 .ProviderState("there is one event with type 'DetailsView'",
                     setUp: EnsureOneDetailsViewEventExists);
 
-            //_server = TestServer.Create(app =>
-            //{
-            //    app.Use(typeof(AuthorizationTokenReplacementMiddleware), app.CreateDataProtector(typeof(OAuthAuthorizationServerMiddleware).Namespace, "Access_Token", "v1"));
-            //    var apiStartup = new Startup();
-            //    apiStartup.Configuration(app);
-            //});
+            // todo (HACK): Find a better way to inject pact config into MockProviderNancyBootstrapper
+            MockProviderNancyBootstrapper.PactConfig = new PactConfig();
+            var builder = new WebHostBuilder();
+            builder.UseStartup<Startup4ProviderRun>();
 
-            _server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
-
+            _server = new TestServer(builder);
+            
             //Act / Assert
             pactVerifier
                    .ServiceProvider("Event API", _server.CreateClient())

@@ -63,7 +63,7 @@ namespace PactNet.Mocks.MockHttpService.Nancy
                     .UseUrls($"{_baseUri}")
                     .UseContentRoot(Directory.GetCurrentDirectory())
                     .UseKestrel()
-                    .UseStartup<Startup>()
+                    .UseStartup<Startup4ConsumerRun>()
                     .Build();
 
                 _host.Start();

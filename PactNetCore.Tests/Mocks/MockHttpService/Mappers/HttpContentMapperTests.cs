@@ -1,9 +1,9 @@
-﻿using System;
+﻿using PactNet.Mocks.MockHttpService.Mappers;
+using PactNet.Mocks.MockHttpService.Models;
+using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
-using PactNet.Mocks.MockHttpService.Mappers;
-using PactNet.Mocks.MockHttpService.Models;
 using Xunit;
 
 namespace PactNet.Tests.Mocks.MockHttpService.Mappers

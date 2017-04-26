@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using Newtonsoft.Json;
@@ -211,7 +212,8 @@ namespace PactNet
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException(String.Format("Json Pact file could not be retrieved using uri \'{0}\'.", PactFileUri), ex);
+                string fullPath = Path.GetFullPath(PactFileUri);
+                throw new InvalidOperationException(String.Format("Json Pact file could not be retrieved using uri \'{0}\'.\r\nFull Path:\r\n{1}", PactFileUri, fullPath), ex);
             }
 
             //Filter interactions

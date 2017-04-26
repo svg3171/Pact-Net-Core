@@ -13,3 +13,5 @@ C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web.Tests\obj\Debug\netcoreapp1.1\Provider.Api.Web.Tests.AssemblyInfo.cs
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web.Tests\obj\Debug\netcoreapp1.1\Provider.Api.Web.Tests.dll
 C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web.Tests\obj\Debug\netcoreapp1.1\Provider.Api.Web.Tests.pdb
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web.Tests\bin\Debug\netcoreapp1.1\Provider.Api.Web.dll
+C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Samples\EventApi\Provider.Api.Web.Tests\bin\Debug\netcoreapp1.1\Provider.Api.Web.pdb

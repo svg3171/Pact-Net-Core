@@ -8,34 +8,8 @@ using Nancy.Owin;
 
 namespace PactNet.Mocks.MockHttpService.Nancy
 {
-    class KestrelHttpHost : IHttpHost
-    {
 
-        public KestrelHttpHost(Uri baseUri, string providerName, PactConfig config, bool bindOnAllAdapters)
-        {
-            var host = new WebHostBuilder()
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseKestrel()
-                .UseStartup<Startup>()
-                .Build();
-
-            host.Run();
-        }
-
-        public void Start()
-        {
-            throw new NotImplementedException();
-        }
-
-
-        public void Stop()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-
-    public class Startup
+    public class Startup4ConsumerRun
     {
         public void Configure(IApplicationBuilder app)
         {

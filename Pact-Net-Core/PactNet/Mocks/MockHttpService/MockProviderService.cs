@@ -191,6 +191,7 @@ namespace PactNet.Mocks.MockHttpService
             }
         }
 
+
         private void RegisterInteraction()
         {
             if (String.IsNullOrEmpty(_description))
@@ -223,43 +224,12 @@ namespace PactNet.Mocks.MockHttpService
             ClearTrasientState();
         }
 
+
         private static string BuildTestContext()
         {
-            return "EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail";
-            try
-            {
-                throw new Exception("HACK!!");
-            }
-            catch (Exception ex)
-            {
-                var stack = new StackTrace(ex, true);
-                var stackFrames = stack.GetFrames() ?? new StackFrame[0];
-
-                var relevantStackFrameSummaries = new List<string>();
-
-                foreach (var stackFrame in stackFrames)
-                {
-                    Type type = stackFrame.GetMethod().DeclaringType;
-
-                    if (type == null ||
-                        (type.GetAssembly().GetName().Name.StartsWith("PactNet", StringComparison.OrdinalIgnoreCase) &&
-                         !type.GetAssembly().GetName().Name.Equals("PactNet.Tests", StringComparison.OrdinalIgnoreCase)))
-                    {
-                        continue;
-                    }
-
-                    //Don't care about any mscorlib frames down
-                    if (type.GetAssembly().GetName().Name.Equals("mscorlib", StringComparison.OrdinalIgnoreCase))
-                    {
-                        break;
-                    }
-
-                    relevantStackFrameSummaries.Add(String.Format("{0}.{1}", type.Name, stackFrame.GetMethod().Name));
-                }
-
-                return String.Join(" ", relevantStackFrameSummaries);
-            }
+            return TestContextInfo.ContextInfo.CurrentContextName;
         }
+
 
         private void SendAdminHttpRequest(HttpVerb method, string path)
         {

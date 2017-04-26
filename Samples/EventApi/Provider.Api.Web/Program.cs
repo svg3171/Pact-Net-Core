@@ -16,7 +16,7 @@ namespace Provider.Api.Web
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
-                .UseStartup<Startup>()
+                .UseStartup<Startup4ProviderRun>()
                 .UseApplicationInsights()
                 .Build();
 

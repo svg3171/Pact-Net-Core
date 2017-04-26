@@ -11,26 +11,26 @@ namespace Provider.Api.Web.Controllers
 {
     public class EventsController : Controller
     {
-        [Authorize]
-        [Route("events")]
+        //[Authorize]
+        [HttpGet("events")]
         public IEnumerable<Event> Get()
         {
             return GetAllEventsFromRepo();
         }
 
-        [Route("events/{id}")]
+        [HttpGet("events/{id}")]
         public Event GetById(Guid id)
         {
             return GetAllEventsFromRepo().First(x => x.EventId == id);
         }
 
-        [Route("events")]
+        [HttpGet("events/bytype/{type}")]
         public IEnumerable<Event> GetByType(string type)
         {
             return GetAllEventsFromRepo().Where(x => x.EventType.Equals(type, StringComparison.OrdinalIgnoreCase));
         }
 
-        [Route("events")]
+        [HttpPost("events")]
         public HttpResponseMessage Post(Event @event)
         {
             if (@event == null)

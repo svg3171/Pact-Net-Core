@@ -1091,3 +1091,590 @@
 2017-04-20 11:44:44.510 -04:00 [Info] Verifying - interactions matched
 2017-04-20 11:44:44.690 -04:00 [Info] Cleared interactions
 2017-04-20 11:44:44.802 -04:00 [Info] Stopped http://localhost:1234
+2017-04-25 09:35:45.533 -04:00 [Info] Started http://localhost:1234
+2017-04-25 09:35:45.935 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.128 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.151 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.159 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.164 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.174 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.182 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.201 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.210 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.287 -04:00 [Info] Cleared interactions
+2017-04-25 09:35:46.345 -04:00 [Info] Stopped http://localhost:1234
+2017-04-25 09:36:56.785 -04:00 [Info] Started http://localhost:1234
+2017-04-25 09:36:57.151 -04:00 [Info] Cleared interactions
+2017-04-25 09:36:57.355 -04:00 [Info] Test context EventsApiConsumerTests.GetEventById_WhenTheEventExists_ReturnsEvent
+2017-04-25 09:36:57.381 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-25 09:36:57.383 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-25 09:36:57.405 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-25 09:36:57.405 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-25 09:36:57.431 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-25 09:36:57.431 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-25 09:36:57.518 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:36:57.557 -04:00 [Info] Cleared interactions
+2017-04-25 09:36:57.605 -04:00 [Info] Stopped http://localhost:1234
+2017-04-25 09:37:15.794 -04:00 [Info] Started http://localhost:1234
+2017-04-25 09:37:16.195 -04:00 [Info] Cleared interactions
+2017-04-25 09:37:16.457 -04:00 [Info] Cleared interactions
+2017-04-25 09:37:16.510 -04:00 [Info] Stopped http://localhost:1234
+2017-04-25 09:39:15.858 -04:00 [Info] Started http://localhost:1234
+2017-04-25 09:39:16.347 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:16.578 -04:00 [Info] Test context EventsApiConsumerTests.CreateBlob_WhenCalledWithBlob_Succeeds
+2017-04-25 09:39:16.598 -04:00 [Info] Registered expected interaction POST /blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2
+2017-04-25 09:39:16.601 -04:00 [Debug] {
+  "description": "a request to create a new blob",
+  "request": {
+    "method": "post",
+    "path": "/blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2",
+    "headers": {
+      "Content-Type": "application/octet-stream"
+    },
+    "body": "VGhpcyBpcyBhIHRlc3Q="
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-25 09:39:16.633 -04:00 [Info] Received request POST /blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2
+2017-04-25 09:39:16.633 -04:00 [Debug] {
+  "method": "post",
+  "path": "/blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Content-Length": "14",
+    "Content-Type": "application/octet-stream",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234",
+    "Content-Disposition": "file; filename=test.txt"
+  },
+  "body": "VGhpcyBpcyBhIHRlc3Q="
+}
+2017-04-25 09:39:16.720 -04:00 [Info] Found matching response for POST /blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2
+2017-04-25 09:39:16.720 -04:00 [Debug] {
+  "status": 201
+}
+2017-04-25 09:39:16.739 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:16.790 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:16.851 -04:00 [Info] Stopped http://localhost:1234
+2017-04-25 09:39:37.869 -04:00 [Info] Started http://localhost:1234
+2017-04-25 09:39:38.253 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:38.466 -04:00 [Info] Test context EventsApiConsumerTests.CreateBlob_WhenCalledWithBlob_Succeeds
+2017-04-25 09:39:38.485 -04:00 [Info] Registered expected interaction POST /blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2
+2017-04-25 09:39:38.488 -04:00 [Debug] {
+  "description": "a request to create a new blob",
+  "request": {
+    "method": "post",
+    "path": "/blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2",
+    "headers": {
+      "Content-Type": "application/octet-stream"
+    },
+    "body": "VGhpcyBpcyBhIHRlc3Q="
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-25 09:39:38.517 -04:00 [Info] Received request POST /blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2
+2017-04-25 09:39:38.517 -04:00 [Debug] {
+  "method": "post",
+  "path": "/blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Content-Length": "14",
+    "Content-Type": "application/octet-stream",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234",
+    "Content-Disposition": "file; filename=test.txt"
+  },
+  "body": "VGhpcyBpcyBhIHRlc3Q="
+}
+2017-04-25 09:39:38.599 -04:00 [Info] Found matching response for POST /blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2
+2017-04-25 09:39:38.599 -04:00 [Debug] {
+  "status": 201
+}
+2017-04-25 09:39:38.614 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:38.627 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:38.657 -04:00 [Info] Test context EventsApiConsumerTests.IsAlive_WhenApiIsAlive_ReturnsTrue
+2017-04-25 09:39:38.678 -04:00 [Info] Registered expected interaction GET /stats/status
+2017-04-25 09:39:38.678 -04:00 [Debug] {
+  "description": "a request to check the api status",
+  "request": {
+    "method": "get",
+    "path": "/stats/status",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "alive": true,
+      "_links": {
+        "uptime": {
+          "href": "/stats/uptime"
+        }
+      }
+    }
+  }
+}
+2017-04-25 09:39:38.687 -04:00 [Info] Received request GET /stats/status
+2017-04-25 09:39:38.687 -04:00 [Debug] {
+  "method": "get",
+  "path": "/stats/status",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-25 09:39:38.699 -04:00 [Info] Found matching response for GET /stats/status
+2017-04-25 09:39:38.699 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "alive": true,
+    "_links": {
+      "uptime": {
+        "href": "/stats/uptime"
+      }
+    }
+  }
+}
+2017-04-25 09:39:38.771 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:38.772 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:38.776 -04:00 [Info] Test context EventsApiConsumerTests.GetBlob_WhenCalledWithId_Succeeds
+2017-04-25 09:39:38.777 -04:00 [Info] Registered expected interaction GET /blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2
+2017-04-25 09:39:38.777 -04:00 [Debug] {
+  "description": "a request to get a new blob by id",
+  "request": {
+    "method": "get",
+    "path": "/blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2"
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "text/plain"
+    },
+    "body": "This is a test"
+  }
+}
+2017-04-25 09:39:38.781 -04:00 [Info] Received request GET /blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2
+2017-04-25 09:39:38.781 -04:00 [Debug] {
+  "method": "get",
+  "path": "/blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-25 09:39:38.781 -04:00 [Info] Found matching response for GET /blobs/38c3976b-5ae8-4f2f-a8ec-46f6aee826e2
+2017-04-25 09:39:38.782 -04:00 [Debug] {
+  "status": 201,
+  "headers": {
+    "Content-Type": "text/plain"
+  },
+  "body": "This is a test"
+}
+2017-04-25 09:39:38.801 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:38.802 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:38.804 -04:00 [Info] Test context EventsApiConsumerTests.UpSince_WhenApiIsAliveAndWeRetrieveUptime_ReturnsUpSinceDate
+2017-04-25 09:39:38.805 -04:00 [Info] Registered expected interaction GET /stats/status
+2017-04-25 09:39:38.805 -04:00 [Debug] {
+  "description": "a request to check the api status",
+  "request": {
+    "method": "get",
+    "path": "/stats/status",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "alive": true,
+      "_links": {
+        "uptime": {
+          "href": "/stats/uptime"
+        }
+      }
+    }
+  }
+}
+2017-04-25 09:39:38.828 -04:00 [Info] Registered expected interaction GET /stats/uptime
+2017-04-25 09:39:38.829 -04:00 [Debug] {
+  "description": "a request to check the api uptime",
+  "request": {
+    "method": "get",
+    "path": "/stats/uptime",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "upSince": "2014-06-27T23:51:12Z"
+    }
+  }
+}
+2017-04-25 09:39:38.835 -04:00 [Info] Received request GET /stats/status
+2017-04-25 09:39:38.835 -04:00 [Debug] {
+  "method": "get",
+  "path": "/stats/status",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-25 09:39:38.836 -04:00 [Info] Found matching response for GET /stats/status
+2017-04-25 09:39:38.836 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "alive": true,
+    "_links": {
+      "uptime": {
+        "href": "/stats/uptime"
+      }
+    }
+  }
+}
+2017-04-25 09:39:38.858 -04:00 [Info] Received request GET /stats/uptime
+2017-04-25 09:39:38.858 -04:00 [Debug] {
+  "method": "get",
+  "path": "/stats/uptime",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-25 09:39:38.859 -04:00 [Info] Found matching response for GET /stats/uptime
+2017-04-25 09:39:38.859 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "upSince": "2014-06-27T23:51:12Z"
+  }
+}
+2017-04-25 09:39:38.865 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:38.866 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:38.876 -04:00 [Info] Test context EventsApiConsumerTests.GetEventById_WhenTheEventExists_ReturnsEvent
+2017-04-25 09:39:38.876 -04:00 [Info] Registered expected interaction GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-25 09:39:38.877 -04:00 [Debug] {
+  "description": "a request to retrieve event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "provider_state": "there is an event with id '83f9262f-28f1-4703-ab1a-8cfd9e8249c9'",
+  "request": {
+    "method": "get",
+    "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+    }
+  }
+}
+2017-04-25 09:39:38.882 -04:00 [Info] Received request GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-25 09:39:38.882 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-25 09:39:38.882 -04:00 [Info] Found matching response for GET /events/83f9262f-28f1-4703-ab1a-8cfd9e8249c9
+2017-04-25 09:39:38.882 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9"
+  }
+}
+2017-04-25 09:39:38.890 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:38.891 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:38.897 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WithNoAuthorizationToken_ShouldFail
+2017-04-25 09:39:38.898 -04:00 [Info] Registered expected interaction GET /events
+2017-04-25 09:39:38.898 -04:00 [Debug] {
+  "description": "a request to retrieve all events with no authorization",
+  "provider_state": "there are events with ids '45D80D13-D5A2-48D7-8353-CBB4C0EAABF5', '83F9262F-28F1-4703-AB1A-8CFD9E8249C9' and '3E83A96B-2A0C-49B1-9959-26DF23F83AEB'",
+  "request": {
+    "method": "get",
+    "path": "/events",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 401,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "message": "Authorization has been denied for this request."
+    }
+  }
+}
+2017-04-25 09:39:38.904 -04:00 [Info] Received request GET /events
+2017-04-25 09:39:38.904 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-25 09:39:38.904 -04:00 [Info] Found matching response for GET /events
+2017-04-25 09:39:38.904 -04:00 [Debug] {
+  "status": 401,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "message": "Authorization has been denied for this request."
+  }
+}
+2017-04-25 09:39:38.907 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:38.908 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:38.919 -04:00 [Info] Test context EventsApiConsumerTests.GetEventsByType_WhenOneEventWithTheTypeExists_ReturnsEvent
+2017-04-25 09:39:38.922 -04:00 [Info] Registered expected interaction GET /events
+2017-04-25 09:39:38.924 -04:00 [Debug] {
+  "description": "a request to retrieve events with type 'DetailsView'",
+  "provider_state": "there is one event with type 'DetailsView'",
+  "request": {
+    "method": "get",
+    "path": "/events",
+    "query": "type=DetailsView",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": [
+      {
+        "eventType": "DetailsView"
+      }
+    ]
+  }
+}
+2017-04-25 09:39:38.949 -04:00 [Info] Received request GET /events
+2017-04-25 09:39:38.949 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events",
+  "query": "type=DetailsView",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-25 09:39:38.955 -04:00 [Info] Found matching response for GET /events
+2017-04-25 09:39:38.955 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": [
+    {
+      "eventType": "DetailsView"
+    }
+  ]
+}
+2017-04-25 09:39:38.968 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:38.969 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:38.979 -04:00 [Info] Test context EventsApiConsumerTests.GetAllEvents_WhenCalled_ReturnsAllEvents
+2017-04-25 09:39:38.979 -04:00 [Info] Registered expected interaction GET /events
+2017-04-25 09:39:38.979 -04:00 [Debug] {
+  "description": "a request to retrieve all events",
+  "provider_state": "there are events with ids '45D80D13-D5A2-48D7-8353-CBB4C0EAABF5', '83F9262F-28F1-4703-AB1A-8CFD9E8249C9' and '3E83A96B-2A0C-49B1-9959-26DF23F83AEB'",
+  "request": {
+    "method": "get",
+    "path": "/events",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "Bearer SomeValidAuthToken"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": [
+      {
+        "eventId": "45d80d13-d5a2-48d7-8353-cbb4c0eaabf5",
+        "timestamp": "2014-06-30T01:37:41.0660548",
+        "eventType": "SearchView"
+      },
+      {
+        "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+        "timestamp": "2014-06-30T01:37:52.2618864",
+        "eventType": "DetailsView"
+      },
+      {
+        "eventId": "3e83a96b-2a0c-49b1-9959-26df23f83aeb",
+        "timestamp": "2014-06-30T01:38:00.8518952",
+        "eventType": "SearchView"
+      }
+    ]
+  }
+}
+2017-04-25 09:39:38.983 -04:00 [Info] Received request GET /events
+2017-04-25 09:39:38.983 -04:00 [Debug] {
+  "method": "get",
+  "path": "/events",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Authorization": "Bearer SomeValidAuthToken",
+    "Host": "localhost:1234"
+  }
+}
+2017-04-25 09:39:38.983 -04:00 [Info] Found matching response for GET /events
+2017-04-25 09:39:38.983 -04:00 [Debug] {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": [
+    {
+      "eventId": "45d80d13-d5a2-48d7-8353-cbb4c0eaabf5",
+      "timestamp": "2014-06-30T01:37:41.0660548",
+      "eventType": "SearchView"
+    },
+    {
+      "eventId": "83f9262f-28f1-4703-ab1a-8cfd9e8249c9",
+      "timestamp": "2014-06-30T01:37:52.2618864",
+      "eventType": "DetailsView"
+    },
+    {
+      "eventId": "3e83a96b-2a0c-49b1-9959-26df23f83aeb",
+      "timestamp": "2014-06-30T01:38:00.8518952",
+      "eventType": "SearchView"
+    }
+  ]
+}
+2017-04-25 09:39:39.000 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:39.001 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:39.006 -04:00 [Info] Test context EventsApiConsumerTests.CreateEvent_WhenCalledWithEvent_Succeeds
+2017-04-25 09:39:39.008 -04:00 [Info] Registered expected interaction POST /events
+2017-04-25 09:39:39.008 -04:00 [Debug] {
+  "description": "a request to create a new event",
+  "request": {
+    "method": "post",
+    "path": "/events",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "eventId": "1f587704-2dcc-4313-a233-7b62b4b469db",
+      "timestamp": "2011-07-01T01:41:03",
+      "eventType": "DetailsView"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-25 09:39:39.019 -04:00 [Info] Received request POST /events
+2017-04-25 09:39:39.019 -04:00 [Debug] {
+  "method": "post",
+  "path": "/events",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Content-Length": "118",
+    "Content-Type": "application/json; charset=utf-8",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:1234"
+  },
+  "body": {
+    "eventId": "1f587704-2dcc-4313-a233-7b62b4b469db",
+    "timestamp": "2011-07-01T01:41:03",
+    "eventType": "DetailsView"
+  }
+}
+2017-04-25 09:39:39.052 -04:00 [Info] Found matching response for POST /events
+2017-04-25 09:39:39.052 -04:00 [Debug] {
+  "status": 201
+}
+2017-04-25 09:39:39.053 -04:00 [Info] Verifying - interactions matched
+2017-04-25 09:39:39.086 -04:00 [Info] Cleared interactions
+2017-04-25 09:39:39.133 -04:00 [Info] Stopped http://localhost:1234

@@ -8,8 +8,11 @@ using PactNet.Configuration.Json;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Mappers;
 using PactNet.Mocks.MockHttpService.Models;
+using PactNet.TestContextInfo;
 using PactNet.Tests.Fakes;
 using Xunit;
+
+
 
 namespace PactNet.Tests.Mocks.MockHttpService
 {
@@ -66,6 +69,8 @@ namespace PactNet.Tests.Mocks.MockHttpService
         [Fact]
         public void Given_WithProviderState_SetsProviderState()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             const string providerState = "My provider state";
             var mockService = GetSubject();
             mockService.Start();
@@ -350,6 +355,8 @@ namespace PactNet.Tests.Mocks.MockHttpService
         [Fact]
         public void WillRespondWith_WithValidInteraction_PerformsAdminInteractionsPostRequestWithTestContext()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             var providerState = "My provider state";
             var description = "My description";
             var request = new ProviderServiceRequest
@@ -372,9 +379,11 @@ namespace PactNet.Tests.Mocks.MockHttpService
                 .WillRespondWith(response);
 
             var actualRequest = _fakeHttpMessageHandler.RequestsReceived.Single();
-
+            
             Assert.True(actualRequest.Headers.Single(x => x.Key == Constants.AdministrativeRequestTestContextHeaderKey).Value.Single().EndsWith("MockProviderServiceTests.WillRespondWith_WithValidInteraction_PerformsAdminInteractionsPostRequestWithTestContext"));
         }
+
+
 
         [Fact]
         public void WillRespondWith_WhenResponseFromHostIsNotOk_ThrowsPactFailureException()
