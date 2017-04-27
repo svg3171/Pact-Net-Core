@@ -1,4 +1,5 @@
 ﻿using PactNet.Mocks.MockHttpService;
+using PactNet.TestContextInfo;
 using Xunit;
 
 namespace PactNet.Tests.IntegrationTests
@@ -18,6 +19,8 @@ namespace PactNet.Tests.IntegrationTests
         [Fact]
         public void WhenNotRegisteringAnyInteractions_VerificationSucceeds()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             _mockProviderService.VerifyInteractions();
         }
     }

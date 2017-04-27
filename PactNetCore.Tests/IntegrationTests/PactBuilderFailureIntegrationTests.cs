@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Http;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Models;
+using PactNet.TestContextInfo;
 using Xunit;
 
 namespace PactNet.Tests.IntegrationTests
@@ -23,6 +24,8 @@ namespace PactNet.Tests.IntegrationTests
         [Fact]
         public void WhenRegisteringTheSameInteractionTwiceInATest_ThenPactFailureExceptionIsThrown()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             var description = "A POST request to create a new thing";
             var request = new ProviderServiceRequest
             {
@@ -59,6 +62,8 @@ namespace PactNet.Tests.IntegrationTests
         [Fact]
         public void WhenRegisteringAnInteractionThatIsNeverSent_ThenPactFailureExceptionIsThrown()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             _mockProviderService
                 .UponReceiving("A POST request to create a new thing")
                 .With(new ProviderServiceRequest
@@ -86,6 +91,8 @@ namespace PactNet.Tests.IntegrationTests
         [Fact]
         public void WhenRegisteringAnInteractionThatIsSentMultipleTimes_ThenPactFailureExceptionIsThrown()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             _mockProviderService
                 .UponReceiving("A GET request to retrieve a thing")
                 .With(new ProviderServiceRequest
@@ -117,6 +124,8 @@ namespace PactNet.Tests.IntegrationTests
         [Fact]
         public void WhenRegisteringAnInteractionWhereTheRequestDoesNotExactlyMatchTheActualRequest_ThenStatusCodeReturnedIs500AndPactFailureExceptionIsThrown()
         {
+            ContextInfo.SetTestContextName(GetType().Name);
+
             _mockProviderService
                 .UponReceiving("A GET request to retrieve things by type")
                 .With(new ProviderServiceRequest
