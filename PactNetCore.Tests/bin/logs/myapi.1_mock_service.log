@@ -64,3 +64,47 @@
 2017-04-21 14:53:07.647 -04:00 [Info] Started http://localhost:4321
 2017-04-21 14:53:08.095 -04:00 [Info] Stopped http://localhost:4321
 2017-04-27 09:55:53.853 -04:00 [Info] Started http://localhost:4321
+2017-04-27 11:21:39.352 -04:00 [Info] Started http://localhost:4321
+2017-04-27 11:21:39.660 -04:00 [Info] Cleared interactions
+2017-04-27 11:21:39.660 -04:00 [Info] Cleared interactions
+2017-04-27 11:21:39.770 -04:00 [Info] Verifying - interactions matched
+2017-04-27 11:21:39.785 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringTheSameInteractionTwiceInATest_ThenPactFailureExceptionIsThrown
+2017-04-27 11:21:39.785 -04:00 [Info] Registered expected interaction POST /things
+2017-04-27 11:21:39.785 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-27 11:21:39.789 -04:00 [Info] Cleared interactions
+2017-04-27 11:21:39.789 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringTheSameInteractionTwiceInATest_ThenPactFailureExceptionIsThrown
+2017-04-27 11:21:39.789 -04:00 [Info] Registered expected interaction POST /things
+2017-04-27 11:21:39.789 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-27 11:21:39.814 -04:00 [Info] Stopped http://localhost:4321

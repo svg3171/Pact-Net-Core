@@ -7,6 +7,8 @@ using PactNet.Mocks.MockHttpService.Models;
 using PactNet.TestContextInfo;
 using Xunit;
 
+[assembly: CollectionBehavior(DisableTestParallelization = true)]
+
 namespace PactNet.Tests.IntegrationTests
 {
     public class PactBuilderFailureIntegrationTests : IClassFixture<FailureIntegrationTestsMyApiPact>

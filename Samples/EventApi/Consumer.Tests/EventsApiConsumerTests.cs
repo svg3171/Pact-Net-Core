@@ -12,7 +12,7 @@ namespace Consumer.Tests
 {
     public class EventsApiConsumerTests : IClassFixture<ConsumerEventApiPact>
     {
-        private ConsumerEventApiPact _consumerEventApiPact;
+        //private ConsumerEventApiPact _consumerEventApiPact;
 
         private IMockProviderService _mockProviderService;
         private string _mockProviderServiceBaseUri;

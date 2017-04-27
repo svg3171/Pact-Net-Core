@@ -1131,3 +1131,454 @@
 2017-04-27 10:37:18.733 -04:00 [Error] Missing requests: POST /things
 2017-04-27 10:37:18.762 -04:00 [Info] Cleared interactions
 2017-04-27 10:37:18.822 -04:00 [Info] Stopped http://localhost:4321
+2017-04-27 11:19:48.776 -04:00 [Error] System.IO.IOException: Failed to bind to address http://localhost:4321 on the IPv4 loopback interface: port already in use. ---> System.AggregateException: One or more errors occurred. (Error -4091 EADDRINUSE address already in use) ---> Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.Libuv.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.Libuv.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.TcpListenerPrimary.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Listener.<StartAsync>b__8_0(Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.ListenerPrimary.<StartAsync>d__12.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.KestrelEngine.CreateServer(ServerAddress address)
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelServer.Start[TContext](IHttpApplication`1 application)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelServer.Start[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Start()
+   at PactNet.Mocks.MockHttpService.Nancy.NancyHttpHost.Start() in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\NancyHttpHost.cs:line 69
+2017-04-27 11:19:48.776 -04:00 [Info] Started http://localhost:4321
+2017-04-27 11:19:49.037 -04:00 [Info] Cleared interactions
+2017-04-27 11:19:49.037 -04:00 [Info] Cleared interactions
+2017-04-27 11:19:49.165 -04:00 [Info] Verifying - interactions matched
+2017-04-27 11:19:49.183 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringTheSameInteractionTwiceInATest_ThenPactFailureExceptionIsThrown
+2017-04-27 11:19:49.184 -04:00 [Info] Registered expected interaction POST /things
+2017-04-27 11:19:49.184 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-27 11:19:49.192 -04:00 [Info] Cleared interactions
+2017-04-27 11:19:49.193 -04:00 [Info] Cleared interactions
+2017-04-27 11:19:49.195 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionWhereTheRequestDoesNotExactlyMatchTheActualRequest_ThenStatusCodeReturnedIs500AndPactFailureExceptionIsThrown
+2017-04-27 11:19:49.196 -04:00 [Info] Registered expected interaction GET /things
+2017-04-27 11:19:49.196 -04:00 [Debug] {
+  "description": "A GET request to retrieve things by type",
+  "request": {
+    "method": "get",
+    "path": "/things",
+    "query": "type=awesome",
+    "headers": {
+      "Accept": "application/json; charset=utf-8"
+    }
+  },
+  "response": {
+    "status": 200
+  }
+}
+2017-04-27 11:19:49.198 -04:00 [Info] Stopped http://localhost:4321
+2017-04-27 11:21:05.135 -04:00 [Info] Started http://localhost:4321
+2017-04-27 11:21:05.534 -04:00 [Info] Cleared interactions
+2017-04-27 11:21:05.740 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringTheSameInteractionTwiceInATest_ThenPactFailureExceptionIsThrown
+2017-04-27 11:21:05.764 -04:00 [Info] Registered expected interaction POST /things
+2017-04-27 11:21:05.767 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-27 11:21:05.786 -04:00 [Info] Cleared interactions
+2017-04-27 11:21:05.789 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionWhereTheRequestDoesNotExactlyMatchTheActualRequest_ThenStatusCodeReturnedIs500AndPactFailureExceptionIsThrown
+2017-04-27 11:21:05.790 -04:00 [Info] Registered expected interaction GET /things
+2017-04-27 11:21:05.790 -04:00 [Debug] {
+  "description": "A GET request to retrieve things by type",
+  "request": {
+    "method": "get",
+    "path": "/things",
+    "query": "type=awesome",
+    "headers": {
+      "Accept": "application/json; charset=utf-8"
+    }
+  },
+  "response": {
+    "status": 200
+  }
+}
+2017-04-27 11:21:05.826 -04:00 [Info] Received request GET /things
+2017-04-27 11:21:05.826 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things",
+  "query": "type=awesome",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-27 11:21:05.854 -04:00 [Error] No matching interaction found for GET /things
+2017-04-27 11:21:05.865 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-27 11:21:05.866 -04:00 [Error] Missing requests: GET /things
+2017-04-27 11:21:05.867 -04:00 [Error] Unexpected requests: GET /things
+2017-04-27 11:21:05.869 -04:00 [Info] Cleared interactions
+2017-04-27 11:21:05.871 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionThatIsSentMultipleTimes_ThenPactFailureExceptionIsThrown
+2017-04-27 11:21:05.872 -04:00 [Info] Registered expected interaction GET /things/1234
+2017-04-27 11:21:05.872 -04:00 [Debug] {
+  "description": "A GET request to retrieve a thing",
+  "request": {
+    "method": "get",
+    "path": "/things/1234"
+  },
+  "response": {
+    "status": 200
+  }
+}
+2017-04-27 11:21:05.876 -04:00 [Info] Received request GET /things/1234
+2017-04-27 11:21:05.876 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things/1234",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-27 11:21:05.877 -04:00 [Info] Found matching response for GET /things/1234
+2017-04-27 11:21:05.877 -04:00 [Debug] {
+  "status": 200
+}
+2017-04-27 11:21:05.885 -04:00 [Info] Received request GET /things/1234
+2017-04-27 11:21:05.885 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things/1234",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-27 11:21:05.886 -04:00 [Info] Found matching response for GET /things/1234
+2017-04-27 11:21:05.886 -04:00 [Debug] {
+  "status": 200
+}
+2017-04-27 11:21:05.887 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-27 11:21:05.887 -04:00 [Error] The interaction with description 'A GET request to retrieve a thing' and provider state '', was used 2 time/s by the test.
+2017-04-27 11:21:05.889 -04:00 [Info] Cleared interactions
+2017-04-27 11:21:05.891 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionThatIsNeverSent_ThenPactFailureExceptionIsThrown
+2017-04-27 11:21:05.892 -04:00 [Info] Registered expected interaction POST /things
+2017-04-27 11:21:05.892 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-27 11:21:05.893 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-27 11:21:05.893 -04:00 [Error] Missing requests: POST /things
+2017-04-27 11:21:05.922 -04:00 [Info] Cleared interactions
+2017-04-27 11:21:05.977 -04:00 [Info] Stopped http://localhost:4321
+2017-04-27 11:21:39.416 -04:00 [Error] System.IO.IOException: Failed to bind to address http://localhost:4321 on the IPv4 loopback interface: port already in use. ---> System.AggregateException: One or more errors occurred. (Error -4091 EADDRINUSE address already in use) ---> Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.Libuv.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.Libuv.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.TcpListenerPrimary.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Listener.<StartAsync>b__8_0(Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.ListenerPrimary.<StartAsync>d__12.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.KestrelEngine.CreateServer(ServerAddress address)
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelServer.Start[TContext](IHttpApplication`1 application)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelServer.Start[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Start()
+   at PactNet.Mocks.MockHttpService.Nancy.NancyHttpHost.Start() in C:\Users\cwilcox\Documents\gitFrontline\Pact-Net-Core\Pact-Net-Core\PactNet\Mocks\MockHttpService\Nancy\NancyHttpHost.cs:line 69
+2017-04-27 11:21:39.417 -04:00 [Info] Started http://localhost:4321
+2017-04-27 11:23:58.957 -04:00 [Info] Started http://localhost:4321
+2017-04-27 11:23:59.234 -04:00 [Info] Cleared interactions
+2017-04-27 11:23:59.354 -04:00 [Info] Verifying - interactions matched
+2017-04-27 11:23:59.401 -04:00 [Info] Cleared interactions
+2017-04-27 11:23:59.463 -04:00 [Info] Stopped http://localhost:4321
+2017-04-27 11:24:00.256 -04:00 [Info] Started http://localhost:4321
+2017-04-27 11:24:00.264 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:00.283 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringTheSameInteractionTwiceInATest_ThenPactFailureExceptionIsThrown
+2017-04-27 11:24:00.291 -04:00 [Info] Registered expected interaction POST /things
+2017-04-27 11:24:00.291 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-27 11:24:00.301 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:00.303 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionWhereTheRequestDoesNotExactlyMatchTheActualRequest_ThenStatusCodeReturnedIs500AndPactFailureExceptionIsThrown
+2017-04-27 11:24:00.304 -04:00 [Info] Registered expected interaction GET /things
+2017-04-27 11:24:00.304 -04:00 [Debug] {
+  "description": "A GET request to retrieve things by type",
+  "request": {
+    "method": "get",
+    "path": "/things",
+    "query": "type=awesome",
+    "headers": {
+      "Accept": "application/json; charset=utf-8"
+    }
+  },
+  "response": {
+    "status": 200
+  }
+}
+2017-04-27 11:24:00.342 -04:00 [Info] Received request GET /things
+2017-04-27 11:24:00.343 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things",
+  "query": "type=awesome",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-27 11:24:00.364 -04:00 [Error] No matching interaction found for GET /things
+2017-04-27 11:24:00.366 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-27 11:24:00.366 -04:00 [Error] Missing requests: GET /things
+2017-04-27 11:24:00.366 -04:00 [Error] Unexpected requests: GET /things
+2017-04-27 11:24:00.367 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:00.370 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionThatIsSentMultipleTimes_ThenPactFailureExceptionIsThrown
+2017-04-27 11:24:00.370 -04:00 [Info] Registered expected interaction GET /things/1234
+2017-04-27 11:24:00.370 -04:00 [Debug] {
+  "description": "A GET request to retrieve a thing",
+  "request": {
+    "method": "get",
+    "path": "/things/1234"
+  },
+  "response": {
+    "status": 200
+  }
+}
+2017-04-27 11:24:00.374 -04:00 [Info] Received request GET /things/1234
+2017-04-27 11:24:00.374 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things/1234",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-27 11:24:00.374 -04:00 [Info] Found matching response for GET /things/1234
+2017-04-27 11:24:00.374 -04:00 [Debug] {
+  "status": 200
+}
+2017-04-27 11:24:00.385 -04:00 [Info] Received request GET /things/1234
+2017-04-27 11:24:00.385 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things/1234",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-27 11:24:00.385 -04:00 [Info] Found matching response for GET /things/1234
+2017-04-27 11:24:00.385 -04:00 [Debug] {
+  "status": 200
+}
+2017-04-27 11:24:00.386 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-27 11:24:00.386 -04:00 [Error] The interaction with description 'A GET request to retrieve a thing' and provider state '', was used 2 time/s by the test.
+2017-04-27 11:24:00.388 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:00.390 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionThatIsNeverSent_ThenPactFailureExceptionIsThrown
+2017-04-27 11:24:00.391 -04:00 [Info] Registered expected interaction POST /things
+2017-04-27 11:24:00.391 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-27 11:24:00.392 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-27 11:24:00.392 -04:00 [Error] Missing requests: POST /things
+2017-04-27 11:24:00.397 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:00.400 -04:00 [Info] Stopped http://localhost:4321
+2017-04-27 11:24:39.872 -04:00 [Info] Started http://localhost:4321
+2017-04-27 11:24:40.154 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:40.274 -04:00 [Info] Verifying - interactions matched
+2017-04-27 11:24:40.316 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:40.370 -04:00 [Info] Stopped http://localhost:4321
+2017-04-27 11:24:41.159 -04:00 [Info] Started http://localhost:4321
+2017-04-27 11:24:41.166 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:41.183 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringTheSameInteractionTwiceInATest_ThenPactFailureExceptionIsThrown
+2017-04-27 11:24:41.191 -04:00 [Info] Registered expected interaction POST /things
+2017-04-27 11:24:41.191 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-27 11:24:41.197 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:41.200 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionWhereTheRequestDoesNotExactlyMatchTheActualRequest_ThenStatusCodeReturnedIs500AndPactFailureExceptionIsThrown
+2017-04-27 11:24:41.201 -04:00 [Info] Registered expected interaction GET /things
+2017-04-27 11:24:41.201 -04:00 [Debug] {
+  "description": "A GET request to retrieve things by type",
+  "request": {
+    "method": "get",
+    "path": "/things",
+    "query": "type=awesome",
+    "headers": {
+      "Accept": "application/json; charset=utf-8"
+    }
+  },
+  "response": {
+    "status": 200
+  }
+}
+2017-04-27 11:24:41.235 -04:00 [Info] Received request GET /things
+2017-04-27 11:24:41.235 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things",
+  "query": "type=awesome",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-27 11:24:41.255 -04:00 [Error] No matching interaction found for GET /things
+2017-04-27 11:24:41.257 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-27 11:24:41.257 -04:00 [Error] Missing requests: GET /things
+2017-04-27 11:24:41.257 -04:00 [Error] Unexpected requests: GET /things
+2017-04-27 11:24:41.259 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:41.262 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionThatIsSentMultipleTimes_ThenPactFailureExceptionIsThrown
+2017-04-27 11:24:41.262 -04:00 [Info] Registered expected interaction GET /things/1234
+2017-04-27 11:24:41.262 -04:00 [Debug] {
+  "description": "A GET request to retrieve a thing",
+  "request": {
+    "method": "get",
+    "path": "/things/1234"
+  },
+  "response": {
+    "status": 200
+  }
+}
+2017-04-27 11:24:41.266 -04:00 [Info] Received request GET /things/1234
+2017-04-27 11:24:41.267 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things/1234",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-27 11:24:41.267 -04:00 [Info] Found matching response for GET /things/1234
+2017-04-27 11:24:41.267 -04:00 [Debug] {
+  "status": 200
+}
+2017-04-27 11:24:41.275 -04:00 [Info] Received request GET /things/1234
+2017-04-27 11:24:41.275 -04:00 [Debug] {
+  "method": "get",
+  "path": "/things/1234",
+  "headers": {
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:4321"
+  }
+}
+2017-04-27 11:24:41.275 -04:00 [Info] Found matching response for GET /things/1234
+2017-04-27 11:24:41.275 -04:00 [Debug] {
+  "status": 200
+}
+2017-04-27 11:24:41.277 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-27 11:24:41.277 -04:00 [Error] The interaction with description 'A GET request to retrieve a thing' and provider state '', was used 2 time/s by the test.
+2017-04-27 11:24:41.278 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:41.280 -04:00 [Info] Test context PactBuilderFailureIntegrationTests.WhenRegisteringAnInteractionThatIsNeverSent_ThenPactFailureExceptionIsThrown
+2017-04-27 11:24:41.280 -04:00 [Info] Registered expected interaction POST /things
+2017-04-27 11:24:41.280 -04:00 [Debug] {
+  "description": "A POST request to create a new thing",
+  "request": {
+    "method": "post",
+    "path": "/things",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "thingId": 1234,
+      "type": "Awesome"
+    }
+  },
+  "response": {
+    "status": 201
+  }
+}
+2017-04-27 11:24:41.281 -04:00 [Error] Verifying - actual interactions do not match expected interactions
+2017-04-27 11:24:41.281 -04:00 [Error] Missing requests: POST /things
+2017-04-27 11:24:41.286 -04:00 [Info] Cleared interactions
+2017-04-27 11:24:41.288 -04:00 [Info] Stopped http://localhost:4321

@@ -212,7 +212,7 @@ namespace PactNet
             }
             catch (Exception ex)
             {
-                string fullPath = Path.GetFullPath(PactFileUri);
+                var fullPath = PactFileUri.ToLower().StartsWith("http:") ? PactFileUri : Path.GetFullPath(PactFileUri);
                 throw new InvalidOperationException(String.Format("Json Pact file could not be retrieved using uri \'{0}\'.\r\nFull Path:\r\n{1}", PactFileUri, fullPath), ex);
             }
 
