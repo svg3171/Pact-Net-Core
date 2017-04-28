@@ -88,3 +88,12 @@ Failures:
     "eventType": "SearchView"
   }
 ]
+2017-04-28 16:56:37.195 -04:00 [Debug] Verifying a Pact between Consumer and Event API
+  Given there are events with ids '45D80D13-D5A2-48D7-8353-CBB4C0EAABF5', '83F9262F-28F1-4703-AB1A-8CFD9E8249C9' and '3E83A96B-2A0C-49B1-9959-26DF23F83AEB'
+    a request to retrieve all events with no authorization
+      with GET /events
+        returns a response which
+          has status code 401
+          includes headers
+            'Content-Type' with value application/json; charset=utf-8
+          has a matching body

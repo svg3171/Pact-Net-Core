@@ -21,7 +21,7 @@ namespace Provider.Api.Web.Tests
             Task<AuthenticateResult> authenticateResult;
             var token = Context.Request.Headers["Authorization"];
 
-            if (token.ToString().Split(' ')[1] != "None" )
+            if (token.Count > 0 && token.ToString() != string.Empty && token.ToString().Split(' ')[1] != "None" )
             {
                 authenticateResult = Task.Run(() => AuthenticateResult.Success(new AuthenticationTicket(claimsPrincipal,
                     new AuthenticationProperties(),
