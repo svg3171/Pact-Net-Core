@@ -34,13 +34,17 @@ namespace Provider.Api.Web.Tests
         }
 
         [Fact]
-        public void EnsureEventApiHonoursPactWithConsumer_new()
+        public void ProviderApiWeb_ClientPact_Compliance()
         {
             ContextInfo.SetTestContextName(GetType().Name);
 
             //Arrange
             var outputter = new CustomOutputter();
-            var config = new PactVerifierConfig();
+            var config = new PactVerifierConfig()
+            {
+                LogDir = @"c:\logs\PactNetCore"
+            };
+
             config.ReportOutputters.Add(outputter);
 
 

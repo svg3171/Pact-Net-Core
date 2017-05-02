@@ -15,21 +15,18 @@ namespace Provider.Api.Web.Controllers
 
         [HttpGet]
         [Route("blobs/{id}")]
-        public HttpResponseMessage GetById(Guid id)
+        public IActionResult GetById(Guid id)
         {
             var responseContent = new ByteArrayContent(Encoding.UTF8.GetBytes(Data));
             responseContent.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment") { FileName = "text.txt" };
             responseContent.Headers.ContentType = new MediaTypeHeaderValue("text/plain");
 
-            return new HttpResponseMessage(HttpStatusCode.Created)
-            {
-                Content = responseContent
-            };
+            return Created($"api/blobs/{id}", responseContent);
         }
 
         [HttpPost]
         [Route("blobs/{id}")]
-        public HttpResponseMessage Post(Guid id)
+        public IActionResult Post(Guid id)
         {
             var bytes = new Byte[Request.Body.Length];
             Request.Body.ReadAsync(bytes, 0, bytes.Length);
@@ -37,10 +34,10 @@ namespace Provider.Api.Web.Controllers
 
             if (requestBody != Data)
             {
-                return new HttpResponseMessage(HttpStatusCode.BadRequest);
+                return BadRequest();
             }
-            
-            return new HttpResponseMessage(HttpStatusCode.Created);
+
+            return Created($"api/blobs/{id}", requestBody);
         }
     }
 }

@@ -11,7 +11,6 @@ namespace Provider.Api.Web.Controllers
 {
     public class EventsController : Controller
     {
-        //[Authorize]
         [HttpGet("events")]
         public IEnumerable<Event> Get()
         {

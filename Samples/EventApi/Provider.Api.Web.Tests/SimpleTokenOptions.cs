@@ -9,8 +9,8 @@ namespace Provider.Api.Web.Tests
     {
         public SimpleTokenOptions()
         {
-            AuthenticationScheme = "SimpleTokenHandler";
-            AutomaticAuthenticate = true;
+            AuthenticationScheme = "SimpleTokenScheme";
+            AutomaticAuthenticate = false;
             AutomaticChallenge = true;
            
         }

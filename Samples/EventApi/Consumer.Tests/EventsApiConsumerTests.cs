@@ -405,7 +405,7 @@ namespace Consumer.Tests
                 })
                 .WillRespondWith(new ProviderServiceResponse
                 {
-                    Status = 201,
+                    Status = 200,
                     Headers = new Dictionary<string, string>
                     {
                         { "Content-Type", "text/plain" }
